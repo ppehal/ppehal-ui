@@ -28,6 +28,10 @@ let storagePrefix = "app_"
  * Call this once at app initialization to customize the prefix.
  */
 export function setStoragePrefix(prefix: string) {
+  if (!prefix) {
+    console.warn("[browser-storage] Empty prefix ignored, keeping current:", storagePrefix)
+    return
+  }
   storagePrefix = prefix
 }
 
