@@ -42,6 +42,15 @@ function getDbFieldName<TData, TValue>(column: Column<TData, TValue>): string {
   return column.id
 }
 
+function getFilterBadgeCount(filterValue: unknown): number {
+  if (Array.isArray(filterValue)) return filterValue.length || 1
+  if (filterValue && typeof filterValue === "object") {
+    const fk = filterValue as { selectedIds?: unknown[] }
+    if (Array.isArray(fk.selectedIds)) return fk.selectedIds.length || 1
+  }
+  return 1
+}
+
 interface DataTableColumnHeaderProps<TData, TValue> extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>
   title: string
@@ -105,7 +114,7 @@ function FilterMenuItem<TData, TValue>({
           Filtrovat
           {isFiltered && (
             <Badge variant="secondary" className="ml-auto h-5 px-1.5 text-xs">
-              1
+              {getFilterBadgeCount(column.getFilterValue())}
             </Badge>
           )}
         </button>

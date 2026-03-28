@@ -82,8 +82,8 @@ export const numberFilterFn: FilterFn<unknown> = (row, columnId, filterValue) =>
     case "lte":
       return value <= target
     case "between": {
-      const valueTo =
-        filter.valueTo !== null && filter.valueTo !== undefined ? Number(filter.valueTo) : target
+      if (filter.valueTo === null || filter.valueTo === undefined) return true
+      const valueTo = Number(filter.valueTo)
       return value >= target && value <= valueTo
     }
     default:
