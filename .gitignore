@@ -1,3 +1,29 @@
-node_modules
-public/r
-.next
+# Dependencies
+node_modules/
+
+# Build output
+public/r/
+.next/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+tmp/
+*.tsbuildinfo
+.eslintcache
+dist/
+coverage/

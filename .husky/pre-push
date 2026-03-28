@@ -1,0 +1,2 @@
+export PATH="/home/ppehal/.local/share/pnpm:$PATH"
+pnpm run lint:ci && pnpm run build

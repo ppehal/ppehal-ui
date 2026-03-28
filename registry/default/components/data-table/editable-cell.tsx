@@ -52,7 +52,6 @@ export interface EditableCellProps {
  * </EditableCell>
  * ```
  */
-/* eslint-disable react-hooks/refs */
 export function EditableCell({
   value,
   onSave,

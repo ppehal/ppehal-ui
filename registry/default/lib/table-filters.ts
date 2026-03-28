@@ -81,10 +81,11 @@ export const numberFilterFn: FilterFn<unknown> = (row, columnId, filterValue) =>
       return value < target
     case "lte":
       return value <= target
-    case "between":
+    case "between": {
       const valueTo =
         filter.valueTo !== null && filter.valueTo !== undefined ? Number(filter.valueTo) : target
       return value >= target && value <= valueTo
+    }
     default:
       return true
   }
@@ -196,12 +197,13 @@ export const dateFilterFn: FilterFn<unknown> = (row, columnId, filterValue) => {
   const toDate = filter.to ? new Date(filter.to) : null
 
   switch (filter.operator) {
-    case "equals":
+    case "equals": {
       if (!fromDate) return true
       // Compare dates without time
       const cellDateOnly = new Date(cellDate.getFullYear(), cellDate.getMonth(), cellDate.getDate())
       const fromDateOnly = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate())
       return cellDateOnly.getTime() === fromDateOnly.getTime()
+    }
     case "before":
       if (!fromDate) return true
       return cellTime < fromDate.getTime()
