@@ -7,6 +7,10 @@ shadcn/ui custom registry pro sdílení DataTable systému mezi projekty.
 ```bash
 pnpm run build          # shadcn build → public/r/*.json
 pnpm run serve          # lokální server na http://localhost:5555
+pnpm run lint           # ESLint na registry/
+pnpm run lint:ci        # ESLint s --max-warnings 0 (CI)
+pnpm run format         # Prettier --write
+pnpm run format:check   # Prettier --check (CI)
 ```
 
 **Registry URL**: `https://ppehal.github.io/ppehal-ui/r/data-table.json`
