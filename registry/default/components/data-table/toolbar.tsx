@@ -14,7 +14,11 @@ import type {
   DateFilterValue,
   EnumFilterValue,
 } from "@/registry/default/lib/filter-types"
-import { TEXT_OPERATOR_LABELS, NUMBER_OPERATOR_LABELS, DATE_PRESET_LABELS } from "@/registry/default/lib/filter-types"
+import {
+  TEXT_OPERATOR_LABELS,
+  NUMBER_OPERATOR_LABELS,
+  DATE_PRESET_LABELS,
+} from "@/registry/default/lib/filter-types"
 
 // Format filter value for display - exported for use in ActiveFilters
 export function formatFilterValue(filterValue: unknown, _columnType?: string): string {

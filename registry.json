@@ -37,37 +37,130 @@
         "tooltip"
       ],
       "files": [
-        { "path": "registry/default/components/data-table/data-table.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-header.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-filter-popover.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/fk-column-filter.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-config-panel.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-pinning-utils.ts", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-visibility-utils.ts", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-resize-handle.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/draggable-table-header.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/sortable-table-header-row.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/sortable-column-item.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/toolbar.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/pagination.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/density-toggle.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/floating-bar.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/floating-scrollbar.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/row-actions.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/cell-error-boundary.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/db-field-names-context.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/link-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/column-helpers.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/open-detail-column.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-text-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-number-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-currency-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-select-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-select-with-search-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-date-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/editable-combobox-cell.tsx", "type": "registry:component" },
-        { "path": "registry/default/components/data-table/undo-redo-indicator.tsx", "type": "registry:component" },
+        {
+          "path": "registry/default/components/data-table/data-table.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-filter-popover.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/fk-column-filter.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-config-panel.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-pinning-utils.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-visibility-utils.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-resize-handle.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/draggable-table-header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/sortable-table-header-row.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/sortable-column-item.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/toolbar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/pagination.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/density-toggle.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/floating-bar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/floating-scrollbar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/row-actions.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/cell-error-boundary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/db-field-names-context.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/link-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/column-helpers.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/open-detail-column.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-text-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-number-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-currency-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-select-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-select-with-search-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-date-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/editable-combobox-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/undo-redo-indicator.tsx",
+          "type": "registry:component"
+        },
         { "path": "registry/default/components/data-table/index.ts", "type": "registry:component" },
 
         { "path": "registry/default/ui/null-value.tsx", "type": "registry:ui" },

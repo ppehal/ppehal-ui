@@ -17,7 +17,12 @@ import { cn } from "@/lib/utils"
 import { canPinColumn } from "./column-pinning-utils"
 import { ColumnFilterPopover } from "./column-filter-popover"
 import { Badge } from "@/registry/default/ui/badge"
-import { Popover, PopoverAnchor, PopoverContent, PopoverTrigger } from "@/registry/default/ui/popover"
+import {
+  Popover,
+  PopoverAnchor,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/registry/default/ui/popover"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/registry/default/ui/tooltip"
 import { COLUMN_TYPE_CONFIG } from "@/registry/default/lib/constants/column-types"
 import { useShowDbFieldNames } from "./db-field-names-context"

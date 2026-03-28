@@ -5,7 +5,12 @@ import { type ColumnDef, type RowData } from "@tanstack/react-table"
 import { PanelRightOpen } from "lucide-react"
 
 import { Button } from "@/registry/default/ui/button"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/registry/default/ui/tooltip"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/registry/default/ui/tooltip"
 
 /**
  * Creates an "Open Detail" column for DataTable

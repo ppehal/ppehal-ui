@@ -32,20 +32,6 @@ export type EditableColumnType =
   | "combobox"
 
 /**
- * Entity types for FK columns (maps to EntityChip entityType)
- */
-export type FKEntityType =
-  | "case"
-  | "entity"
-  | "investor"
-  | "investment"
-  | "source"
-  | "client"
-  | "bank"
-  | "party"
-  | "email"
-
-/**
  * Filter option for enum columns
  */
 export interface FilterOption {
@@ -78,7 +64,7 @@ declare module "@tanstack/react-table" {
     /**
      * FK entity type for fk columns (determines which loader to use)
      */
-    fkEntity?: FKEntityType
+    fkEntity?: string
     /**
      * Field name containing the FK ID (for filtering by ID)
      * Example: "case_id" for case_code column

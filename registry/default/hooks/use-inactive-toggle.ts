@@ -28,5 +28,5 @@ export function useInactiveToggle(storageKey: string) {
     })
   }, [storageKey])
 
-  return { showInactive, toggle, setShowInactive }
+  return { showInactive, toggle }
 }

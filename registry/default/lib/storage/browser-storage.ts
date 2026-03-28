@@ -82,25 +82,3 @@ export function removeStoredValue(key: string): void {
     // Silently ignore errors
   }
 }
-
-/**
- * Check if a key exists in localStorage.
- */
-export function hasStoredValue(key: string): boolean {
-  if (typeof window === "undefined") {
-    return false
-  }
-
-  try {
-    return localStorage.getItem(`${storagePrefix}${key}`) !== null
-  } catch {
-    return false
-  }
-}
-
-/**
- * Get the full prefixed key (useful for debugging or direct localStorage access).
- */
-export function getStorageKey(key: string): string {
-  return `${storagePrefix}${key}`
-}

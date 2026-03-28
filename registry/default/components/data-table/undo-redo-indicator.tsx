@@ -3,7 +3,12 @@
 import * as React from "react"
 import { Undo2, Redo2, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/registry/default/ui/tooltip"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/registry/default/ui/tooltip"
 import { Button } from "@/registry/default/ui/button"
 
 interface UndoRedoIndicatorProps {

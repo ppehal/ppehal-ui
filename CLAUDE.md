@@ -36,14 +36,14 @@ registry/default/
 
 ### Import konvence v source souborech
 
-| Import v source | Transformace na consumer straně |
-|----------------|--------------------------------|
-| `@/registry/default/ui/button` | `@/components/ui/button` |
-| `@/registry/default/hooks/use-table-preferences` | `@/hooks/use-table-preferences` |
-| `@/registry/default/lib/table-filters` | `@/lib/table-filters` |
-| `@/lib/utils` | `@/lib/utils` (special handling, beze změny) |
-| `@/lib/constants/color-schemes` | `@/lib/constants/color-schemes` (consumer dependency) |
-| `./pagination` | `./pagination` (relativní, beze změny) |
+| Import v source                                  | Transformace na consumer straně                       |
+| ------------------------------------------------ | ----------------------------------------------------- |
+| `@/registry/default/ui/button`                   | `@/components/ui/button`                              |
+| `@/registry/default/hooks/use-table-preferences` | `@/hooks/use-table-preferences`                       |
+| `@/registry/default/lib/table-filters`           | `@/lib/table-filters`                                 |
+| `@/lib/utils`                                    | `@/lib/utils` (special handling, beze změny)          |
+| `@/lib/constants/color-schemes`                  | `@/lib/constants/color-schemes` (consumer dependency) |
+| `./pagination`                                   | `./pagination` (relativní, beze změny)                |
 
 ### Kam NEPATŘÍ typy
 
