@@ -25,6 +25,7 @@ import {
 } from "@/registry/default/ui/popover"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/registry/default/ui/tooltip"
 import { COLUMN_TYPE_CONFIG } from "@/registry/default/lib/constants/column-types"
+import type { FKFilterValue } from "@/registry/default/lib/filter-types"
 import { useShowDbFieldNames } from "./db-field-names-context"
 import "@/registry/default/lib/table-types"
 
@@ -43,10 +44,10 @@ function getDbFieldName<TData, TValue>(column: Column<TData, TValue>): string {
 }
 
 function getFilterBadgeCount(filterValue: unknown): number {
-  if (Array.isArray(filterValue)) return filterValue.length || 1
+  if (Array.isArray(filterValue)) return filterValue.length
   if (filterValue && typeof filterValue === "object") {
-    const fk = filterValue as { selectedIds?: unknown[] }
-    if (Array.isArray(fk.selectedIds)) return fk.selectedIds.length || 1
+    const fk = filterValue as FKFilterValue
+    if (Array.isArray(fk.selectedIds)) return fk.selectedIds.length
   }
   return 1
 }
@@ -112,7 +113,7 @@ function FilterMenuItem<TData, TValue>({
         <button className="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none">
           <Filter className="text-muted-foreground/70 h-3.5 w-3.5" />
           Filtrovat
-          {isFiltered && (
+          {isFiltered && getFilterBadgeCount(column.getFilterValue()) > 0 && (
             <Badge variant="secondary" className="ml-auto h-5 px-1.5 text-xs">
               {getFilterBadgeCount(column.getFilterValue())}
             </Badge>
