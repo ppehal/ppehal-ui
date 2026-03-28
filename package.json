@@ -18,7 +18,6 @@
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
-        "eslint-plugin-react>eslint": "10",
         "eslint-plugin-react-hooks>eslint": "10"
       }
     }
@@ -36,7 +35,6 @@
     "@types/react-dom": "^19.2.3",
     "date-fns": "^4.1.0",
     "eslint": "^10.1.0",
-    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "globals": "^16.5.0",
     "husky": "^9.1.7",

@@ -1,2 +1,2 @@
-export PATH="/home/ppehal/.local/share/pnpm:$PATH"
+export PATH="$HOME/.local/share/pnpm:$PATH"
 pnpm exec lint-staged
