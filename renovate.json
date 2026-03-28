@@ -1,0 +1,60 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests", ":disablePeerDependencies"],
+  "labels": ["dependencies"],
+  "schedule": ["before 6am on Monday"],
+  "timezone": "Europe/Prague",
+  "prHourlyLimit": 3,
+  "prConcurrentLimit": 5,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on Monday"]
+  },
+  "packageRules": [
+    {
+      "description": "Automerge patch updates for stable (>=1.0.0) packages",
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+    {
+      "description": "Do NOT automerge 0.x packages",
+      "matchCurrentVersion": "<1.0.0",
+      "automerge": false
+    },
+    {
+      "description": "Group shadcn ecosystem",
+      "matchPackageNames": ["/^shadcn/"],
+      "groupName": "shadcn"
+    },
+    {
+      "description": "Group lint/format packages",
+      "matchPackageNames": [
+        "/^eslint/",
+        "/^prettier/",
+        "/^@commitlint\\//",
+        "husky",
+        "lint-staged",
+        "typescript-eslint",
+        "globals"
+      ],
+      "groupName": "Lint and Format"
+    },
+    {
+      "description": "Group TypeScript packages",
+      "matchPackageNames": ["typescript", "/^@types\\//"],
+      "groupName": "TypeScript"
+    },
+    {
+      "description": "Require approval for major updates",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "schedule": ["at any time"]
+  }
+}
