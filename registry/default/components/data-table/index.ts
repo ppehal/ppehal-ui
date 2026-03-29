@@ -1,4 +1,6 @@
-export { DataTable } from "./data-table"
+export { DataTable, type ReorderControls } from "./data-table"
+export { SortableRow } from "./sortable-row"
+export { ReorderModeToggle } from "./reorder-mode-toggle"
 export {
   createSelectColumn,
   createCategoryColumn,

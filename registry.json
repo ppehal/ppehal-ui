@@ -161,6 +161,14 @@
           "path": "registry/default/components/data-table/undo-redo-indicator.tsx",
           "type": "registry:component"
         },
+        {
+          "path": "registry/default/components/data-table/sortable-row.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/components/data-table/reorder-mode-toggle.tsx",
+          "type": "registry:component"
+        },
         { "path": "registry/default/components/data-table/index.ts", "type": "registry:component" },
 
         { "path": "registry/default/ui/null-value.tsx", "type": "registry:ui" },

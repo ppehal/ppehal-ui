@@ -23,6 +23,8 @@ export interface TablePreferences {
   sheetWidth: number
   rowDensity: RowDensity
   showDbFieldNames: boolean
+  /** Whether row reorder mode is active (only used when reorderAction is provided) */
+  reorderMode: boolean
 }
 
 const DEFAULT_PREFERENCES: TablePreferences = {
@@ -35,6 +37,7 @@ const DEFAULT_PREFERENCES: TablePreferences = {
   sheetWidth: 800,
   rowDensity: "compact",
   showDbFieldNames: false,
+  reorderMode: false,
 }
 
 export interface TablePreferencesOptions {
@@ -206,6 +209,13 @@ export function useTablePreferences(tableId: string, options?: TablePreferencesO
     [setPreferences]
   )
 
+  const setReorderMode = useCallback(
+    (reorderMode: boolean) => {
+      setPreferences({ reorderMode })
+    },
+    [setPreferences]
+  )
+
   return {
     preferences,
     setPreferences,
@@ -222,5 +232,6 @@ export function useTablePreferences(tableId: string, options?: TablePreferencesO
     setSheetWidth,
     setRowDensity,
     setShowDbFieldNames,
+    setReorderMode,
   }
 }
