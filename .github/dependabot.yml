@@ -1,0 +1,16 @@
+# Dependency updates handled by Renovate (see renovate.json).
+# This file disables Dependabot version update PRs.
+# Security update PRs are disabled via repo settings (automated-security-fixes OFF).
+# Dependabot vulnerability ALERTS remain enabled — Renovate reads them.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
