@@ -1,5 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>ppehal/renovate-config"],
-  "packageRules": [{ "matchPackageNames": ["/^shadcn/", "/^@shadcn\\//"], "groupName": "shadcn" }]
+  "packageRules": [{ "matchPackageNames": ["/^shadcn/"], "groupName": "shadcn" }]
 }
